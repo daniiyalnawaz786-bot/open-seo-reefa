@@ -3,7 +3,7 @@ services:
     openseo:
         build: .
         ports:
-            - '3000:3000'
+            - '127.0.0.1:3011:3000'
         environment:
             ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
             PAGESPEED_API_KEY: ${PAGESPEED_API_KEY:-}
